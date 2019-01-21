@@ -1,9 +1,11 @@
 # MCC
 
-Aqui se describiran los distintos entregables para distimtas asignaturas
+Aqui se describiran los distintos entregables para distintas asignaturas
 
 ## Visión Computacional y Deep Learning
 ### Tarea 1 - Procesamiento de imagenes
+### Imagen original para las pruebas
+
 #### 1. Transformar a una imagen de grises usando la transformación ponderada.
 La funcion recibe una imagen en 24 bits (RGB) y retorna una imagen en la escala de grises en 8 bits
 ```
