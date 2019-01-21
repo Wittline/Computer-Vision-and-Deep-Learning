@@ -8,10 +8,6 @@ Aqui se describiran los distintos entregables para distintas asignaturas
 
 ![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon.png)
 
-![alt text](https://raw.githubusercontent.com/ansegura7/ProduccionFiscalizadaCol2017/master/screenshot/VA-Tarea2-Screenshot.PNG)
-
-
-
 #### 1. Transformar a una imagen de grises usando la transformación ponderada.
 La funcion recibe una imagen en 24 bits (RGB) y retorna una imagen en la escala de grises en 8 bits
 ```
@@ -22,6 +18,8 @@ def TransformacionPonderada(list24bits):
                      (0.11402 * list24bits[i][2])) 
                 for i in range(len(list24bits))]   
 ```
+![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon_TP.png)
+
 #### 2. Transformarla a una imagen de grises con el promedio aritmético.
 La funcion recibe una imagen en 24 bits (RGB) y retorna una imagen en la escala de grises en 8 bits
 ```
@@ -33,6 +31,9 @@ def TransformacionPromedioAritmetico(list24bits):
              for i in range(len(list24bits))]   
    
 ```
+
+![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon_TPA.png)
+
 #### 3. A partir de la imagen de grises ponderada, realizar las siguientes transformaciones:
 ##### 3.1. Aplicarle la transformación negativa.
 La funcion recibe una imagen en 8 bits y retorna una imagen negativa
@@ -43,6 +44,7 @@ def TransformacionNegativa(list8bits):
              for i in range(len(list8bits))]   
    
 ```
+![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon_TN.png)
 
 ##### 3.2. Binarizarla con un umbral de  150 y la función: t(x) = 0, x<= 150; t(x)=255, x>150.
 La funcion recibe una imagen en 8 bits y retorna una imagen binarizada usando un umbral de 150
@@ -52,6 +54,8 @@ def TransformacionBinarizadaUmbral(list8bits, umbral):
               for i in range(len(list8bits))]
    
 ```
+![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon_TB.png)
+
 ##### 3.3 Aplicar la transformación de raíz cuadrada y escalarla en (0, 255). 
 La funcion recibe una imagen en 8 bits, se calcula la raiz cuadrada del valor de cada pixel y el resultado final se escala
 ```
@@ -70,6 +74,8 @@ def TransformacionRaizCuadrada(list8bits):
 TRC = escalar(TransformacionRaizCuadrada(TP))
      
 ``` 
+![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon_TRC.png)
+
 ##### 3.4 Aplicar la transformación de potencia al cubo y escalarla en (0, 255).
 La funcion recibe una imagen en 8 bits, se calcula la la potencia al cubo del valor de cada pixel y el resultado final se escala
 ```
@@ -87,6 +93,7 @@ def TransformacionPotencia(list8bits, potencia):
 TPC = escalar(TransformacionPotencia(TP, 3))
      
 ```
+![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon_TPC.png)
 
 ### Código
 ```
