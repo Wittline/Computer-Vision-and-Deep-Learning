@@ -6,6 +6,8 @@ Aqui se describiran los distintos entregables para distintas asignaturas
 ### Tarea 1 - Procesamiento de imagenes
 ### Imagen original para las pruebas
 
+https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon.png
+
 #### 1. Transformar a una imagen de grises usando la transformación ponderada.
 La funcion recibe una imagen en 24 bits (RGB) y retorna una imagen en la escala de grises en 8 bits
 ```
