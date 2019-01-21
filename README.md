@@ -167,5 +167,13 @@ imagenColor.close()
      
 ```
 
+### Requisitos de ejecución
+Visual studio 2017
+Python 3.6
+No hubo dependencias, por lo tanto con solo usar el archivo .py en cualquier IDE deberìa de funcionar
+
+### Licencia 
+Este proyecto está bajo la licencia MIT.
+
 
 
