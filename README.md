@@ -4,13 +4,13 @@ Aqui se describiran los distintos entregables para distimtas asignaturas
 
 ## Visión Computacional y Deep Learning
 ### Tarea 1 - Procesamiento de imagenes
-#### Transformar a una imagen de grises usando la transformación ponderada.
-#### Transformarla a una imagen de grises con el promedio aritmético.
-#### A partir de la imagen de grises ponderada, realizar las siguientes transformaciones:
-##### Aplicarle la transformación negativa.
-##### Binarizarla con un umbral de  150 y la función:
-##### Aplicar la transformación de raíz cuadrada y escalarla en 0, 255 . 
-##### Aplicar la transformación de potencia al cubo y escalarla en 0, 255 .
+#### 1. Transformar a una imagen de grises usando la transformación ponderada.
+#### 2. Transformarla a una imagen de grises con el promedio aritmético.
+#### 3. A partir de la imagen de grises ponderada, realizar las siguientes transformaciones:
+##### 3.1. Aplicarle la transformación negativa.
+##### 3.2. Binarizarla con un umbral de  150 y la función:
+##### 3.3 Aplicar la transformación de raíz cuadrada y escalarla en 0, 255 . 
+##### 3.4 Aplicar la transformación de potencia al cubo y escalarla en 0, 255 .
 
 A step by step series of examples that tell you how to get a development env running
 
