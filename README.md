@@ -1,20 +1,16 @@
-# Project Title
+# MCC
 
-One Paragraph of project description goes here
+Aqui se describiran los distintos entregables para distimtas asignaturas
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-### Installing
+## Visión Computacional y Deep Learning
+### Tarea 1 - Procesamiento de imagenes
+#### Transformar a una imagen de grises usando la transformación ponderada.
+#### Transformarla a una imagen de grises con el promedio aritmético.
+#### A partir de la imagen de grises ponderada, realizar las siguientes transformaciones:
+##### Aplicarle la transformación negativa.
+##### Binarizarla con un umbral de  150 y la función:
+##### Aplicar la transformación de raíz cuadrada y escalarla en 0, 255 . 
+##### Aplicar la transformación de potencia al cubo y escalarla en 0, 255 .
 
 A step by step series of examples that tell you how to get a development env running
 
