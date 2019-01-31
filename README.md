@@ -255,6 +255,9 @@ def contornos_sobel(filename):
     print("** Tercer ejercicio ** ")
     contornos = contornos_sobel('yo.jpg')    
 ```
+![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%202/imyogray_sobelx.jpg)
+![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%202/imyogray_sobely.jpg)
+![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%202/imyogray_sobel.jpg)
 
 #### 4. Este ejercicio debe usar la imagen en tono de grises de panda.png, la cual Usando la información del gradiente con el operador derivada que creas más conveniente (ver archivo 02_Transformaciones_Varias.pdf, diapositiva 36), dibujar en la imagen los vectores gradiente ortogonales a como se muestran en las imágenes de las diapositivas 36 y 37 del archivo mencionado. Para calcular y aproximar el gradiente puedes utilizar cualquiera de los kernels derivada que desees para obtener las parciales con X y Y. Sin embargo, la magnitud de todos ellos darle un valor constante a tu elección. Además, para una mejor visualización de los vectores gradientes, puedes dibujar solamente un porcentaje de dichos vectores gradientes y solo aquellos que tengan las magnitudes más significativas. 
 ```
@@ -297,6 +300,10 @@ def vectores_gradientes(filename):
   vectores_gradientes("panda.jpg")
 ```
 
+![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%202/panda.jpg)
+
+![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%202/panda_vector.jpg)
+        
 ### Código
 ```
 import cv2
@@ -436,6 +443,7 @@ if __name__ == '__main__':
      
 ```
 
+      
 ### Requisitos de ejecución de las tareas
 Visual studio 2017
 Python 3.6
