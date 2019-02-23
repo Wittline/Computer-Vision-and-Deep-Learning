@@ -443,6 +443,12 @@ if __name__ == '__main__':
      
 ```
 
+
+### Tarea 3 - Contador de objetos - Contar monedas
+### Imagen original para las pruebas
+
+![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%203/Image.png)
+
       
 ### Requisitos de ejecución de las tareas
 Visual studio 2017
