@@ -549,7 +549,7 @@ if __name__ == '__main__':
 
 ```   
 
-### Tarea 4 - Transformaciones geomètricas 
+### Tarea 4 - Operaciones Morfològicas y Transformaciones geomètricas 
 ### Imagen para las pruebas
 
 ![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%204/letras.png)
