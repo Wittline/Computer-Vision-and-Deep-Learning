@@ -172,8 +172,14 @@ imagenColor.close()
 ```
 </li>
 </ul>
+</details>
 
-<summary>2. Edge Detection</a></summary>
+
+
+
+
+<details>
+<summary>2. Edge Detection</summary>
 <ul>
 <li>
 
@@ -449,14 +455,11 @@ def main():
     vectores_gradientes("panda.jpg")
            
 if __name__ == '__main__':
-    main()
-     
+    main()     
 ```	
 </li>
+</ul>
 </details>
-
-
-
 
 ### Tarea 3 - Contador de objetos - Contar monedas
 ### Imagen original para las pruebas
