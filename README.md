@@ -3,15 +3,13 @@
 Aqui se describen los distintos entregables para distintas asignaturas
 
 ## Computer vision and Deep Learning homeworks
-### Image processing - Image transformations
-### Original Image
-
 
 <details>
 <summary>1. Image processing - Image transformations</a></summary>
 <ul>
 	<li>
-     ![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon.png)
+	### Original Image
+     ![alt text](https://github.com/Wittline/ITESM/blob/master/Computer-Vision-and-Deep-Learning/Tarea%201/ejemplos/baboon.png)
 
 #### 1. Transformar a una imagen de grises usando la transformación ponderada.
 La funciòn recibe una imagen en 24 bits (RGB) y retorna una imagen en la escala de grises en 8 bits
@@ -26,13 +24,9 @@ def TransformacionPonderada(list24bits):
 ![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon_TP.png)
     
     </li>
-	<li>Entropy</li>
-</ul>
-</details>
-
-
-
-#### 2. Transformarla a una imagen de grises con el promedio aritmético.
+	<li>
+	
+	#### 2. Transformarla a una imagen de grises con el promedio aritmético.
 La funcion recibe una imagen en 24 bits (RGB) y retorna una imagen en la escala de grises en 8 bits
 ```
 
@@ -44,9 +38,11 @@ def TransformacionPromedioAritmetico(list24bits):
    
 ```
 
-![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon_TPA.png)
-
-#### 3. A partir de la imagen de grises ponderada, realizar las siguientes transformaciones:
+![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon_TPA.png)	
+	</li>	
+	
+	<li>
+	#### 3. A partir de la imagen de grises ponderada, realizar las siguientes transformaciones:
 ##### 3.1. Aplicarle la transformación negativa.
 La funcion recibe una imagen en 8 bits y retorna una imagen negativa
 ```
@@ -57,6 +53,8 @@ def TransformacionNegativa(list8bits):
    
 ```
 ![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon_TN.png)
+
+
 
 ##### 3.2. Binarizarla con un umbral de  150 y la función: t(x) = 0, x<= 150; t(x)=255, x>150.
 La funcion recibe una imagen en 8 bits y retorna una imagen binarizada usando un umbral de 150
@@ -178,6 +176,12 @@ imagenColor.close()
 
      
 ```
+
+	</li>
+</ul>
+</details>
+
+
 ### Tarea 2 - Detector de bordes
 #### 1. Obtener la correlación cruzada H ⨂ w, de la imagen con dicho kernel, y obtener la convolucion H * w
 ```
