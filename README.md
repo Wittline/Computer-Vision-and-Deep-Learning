@@ -170,10 +170,7 @@ imagenColor.close()
      
 ```
 
-<details>
-<summary>2. Edge Detection</summary>
-<ul>
-<li>
+## 2. Edge Detection
 
 #### 1. Obtener la correlación cruzada H ⨂ w, de la imagen con dicho kernel, y obtener la convolucion H * w
 ```
@@ -449,14 +446,8 @@ def main():
 if __name__ == '__main__':
     main()     
 ```	
-</li>
-</ul>
-</details>
 
-<details>
-<summary>3. Counting objects</summary>
-<ul>
-<li>
+# 3. Counting objects
 
 ### Tarea 3 - Contador de objetos - Contar monedas
 ### Imagen original para las pruebas
@@ -562,16 +553,8 @@ if __name__ == '__main__':
     main()
 
 ```   
-</li>
-</ul>
-</details>
 
-
-
-<details>
-<summary>4. Morphological Operations and Geometric Transformations</summary>
-<ul>
-<li>
+# 4. Morphological Operations and Geometric Transformations
 
 ### Tarea 4 - Operaciones Morfològicas y Transformaciones geomètricas 
 ### Imagen para las pruebas
@@ -742,16 +725,9 @@ def main():
 
 if __name__ == '__main__':
     main()
+```  
 
-```   
-</li>
-</ul>
-</details>
-
-<details>
-<summary>5. Projective Transformation</summary>
-<ul>
-<li>
+# 5. Projective Transformation
 
 ### Tarea 5 - Transformación Proyectiva
 ### Imagen para las pruebas
@@ -916,18 +892,7 @@ if __name__ == '__main__':
 ```
 
 
-</li>
-</ul>
-</details>
-
-<details>
-<summary>5. Deep learning</summary>
-<ul>
-<li>
-Pending
-</li>
-</ul>
-</details>
+# 5. Deep learning
 
 ## Execution requirements
 Visual studio 2017
