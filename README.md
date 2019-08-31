@@ -2,10 +2,9 @@
 
 This repository contains information on the basic techniques and algorithms used in computer image processing, in addition to some projects related to pattern recognition using deep learning.
 
-<details>
-	<summary>1. Image processing - Image transformations</summary>
-	<ul>
-		<li>			
+
+# 1. Image processing - Image transformations
+		
 			
 ![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon.png)
 	
@@ -170,13 +169,6 @@ convertirImagen(imagenColor.size,TPC,'C:/ejemplos/baboon_TPC.png')
 imagenColor.close()
      
 ```
-</li>
-</ul>
-</details>
-
-
-
-
 
 <details>
 <summary>2. Edge Detection</summary>
