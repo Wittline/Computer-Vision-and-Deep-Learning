@@ -1,8 +1,7 @@
-# MCC
+# Computer vision and Deep Learning homeworks
 
-Aqui se describen los distintos entregables para distintas asignaturas
+This repository contains information on the basic techniques and algorithms used in computer image processing, in addition to some projects related to pattern recognition using deep learning.
 
-## Computer vision and Deep Learning homeworks
 <details>
 	<summary>1. Image processing - Image transformations</summary>
 	<ul>
@@ -924,6 +923,15 @@ if __name__ == '__main__':
 
 ```
 
+
+</li>
+</ul>
+</details>
+
+<details>
+<summary>5. Deep learning</summary>
+<ul>
+<li>
 
 </li>
 </ul>
