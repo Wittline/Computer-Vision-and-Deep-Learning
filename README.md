@@ -771,7 +771,7 @@ if __name__ == '__main__':
 #### Seleccionar despues los 4 puntos de la imagen destino
 ![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%205/Image_final_points.png)
 #### 4. Resultados
-![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%205/ImagenProyetivaMejorada.jpg)
+![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visión%20Computacional%20y%20Deep%20Learning/Tarea%205/ImagenProyetivaMejorada.jpg)
 
 ### Código
 ```
@@ -928,7 +928,7 @@ if __name__ == '__main__':
 </ul>
 </details>
 
-### Requisitos de ejecución de las tareas
+## Execution requirements
 Visual studio 2017
 Python 3.6
 OpenCv
