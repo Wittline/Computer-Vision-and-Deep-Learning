@@ -3,9 +3,9 @@
 Aqui se describen los distintos entregables para distintas asignaturas
 
 ## Computer vision and Deep Learning homeworks
-Counting objects
+
 <details>
-<summary>1. Image processing - Image transformations</a></summary>
+<summary>1. Image processing - Image transformations</summary>
 <ul>
 <li>
 ![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon.png)
@@ -575,6 +575,12 @@ if __name__ == '__main__':
 </details>
 
 
+
+<details>
+<summary>4. Morphological Operations and Geometric Transformations</summary>
+<ul>
+<li>
+
 ### Tarea 4 - Operaciones Morfològicas y Transformaciones geomètricas 
 ### Imagen para las pruebas
 
@@ -746,6 +752,15 @@ if __name__ == '__main__':
     main()
 
 ```   
+</li>
+</ul>
+</details>
+
+<details>
+<summary>5. Projective Transformation</summary>
+<ul>
+<li>
+
 ### Tarea 5 - Transformación Proyectiva
 ### Imagen para las pruebas
 
@@ -908,6 +923,11 @@ if __name__ == '__main__':
 
 ```
 
+
+</li>
+</ul>
+</details>
+
 ### Requisitos de ejecución de las tareas
 Visual studio 2017
 Python 3.6
@@ -917,8 +937,12 @@ PIL
 matplotlib
 scipy
 
-### Licencia 
-Este proyecto está bajo la licencia MIT.
+## Contributing and Feedback
+Hate me more :)
 
+## Authors
+- Created by Ramses Alexander Coraspe Valdez
+- Created on April, 2019
 
-
+## License
+This project is licensed under the terms of the MIT license.
