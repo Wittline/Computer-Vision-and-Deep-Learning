@@ -3,16 +3,15 @@
 This repository contains information on the basic techniques and algorithms used in computer image processing, in addition to some projects related to pattern recognition using deep learning.
 
 
-# 1. Image processing - Image transformations
+## 1. Image processing - Image transformations
 		
 			
 ![alt text](https://wittline.github.io/Computer-Vision-and-Deep-Learning/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon.png)
 	
-#### 1. Transformar a una imagen de grises usando la transformación ponderada.
+### 1. Transformar a una imagen de grises usando la transformación ponderada.
 	
 La funciòn recibe una imagen en 24 bits (RGB) y retorna una imagen en la escala de grises en 8 bits
 ```
-
 def TransformacionPonderada(list24bits):
     return  [round((0.29894 * list24bits[i][0]) + 
                      (0.58704 * list24bits[i][1]) + 
@@ -20,13 +19,12 @@ def TransformacionPonderada(list24bits):
                 for i in range(len(list24bits))]   
 ```
 ![alt text](https://wittline.github.io/Computer-Vision-and-Deep-Learning/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon_TP.png)
-    
- 
-	
-	#### 2. Transformarla a una imagen de grises con el promedio aritmético.
-La funcion recibe una imagen en 24 bits (RGB) y retorna una imagen en la escala de grises en 8 bits
-```
+     	
+### 2. Transformarla a una imagen de grises con el promedio aritmético.
 
+La funcion recibe una imagen en 24 bits (RGB) y retorna una imagen en la escala de grises en 8 bits
+
+```
 def TransformacionPromedioAritmetico(list24bits):
     return  [((list24bits[i][0]) +
               (list24bits[i][1]) +  
@@ -36,11 +34,13 @@ def TransformacionPromedioAritmetico(list24bits):
 ```
 
 ![alt text](https://wittline.github.io/Computer-Vision-and-Deep-Learning/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon_TPA.png)	
-	#### 3. A partir de la imagen de grises ponderada, realizar las siguientes transformaciones:
-##### 3.1. Aplicarle la transformación negativa.
-La funcion recibe una imagen en 8 bits y retorna una imagen negativa
-```
 
+### 3. A partir de la imagen de grises ponderada, realizar las siguientes transformaciones:
+#### 3.1. Aplicarle la transformación negativa.
+
+La funcion recibe una imagen en 8 bits y retorna una imagen negativa
+
+```
 def TransformacionNegativa(list8bits):
     return  [(255 - list8bits[i]) 
              for i in range(len(list8bits))]   
@@ -49,19 +49,23 @@ def TransformacionNegativa(list8bits):
 ![alt text](https://wittline.github.io/Computer-Vision-and-Deep-Learning/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon_TN.png)
 
 
+#### 3.2. Binarizarla con un umbral de  150 y la función: t(x) = 0, x<= 150; t(x)=255, x>150.
 
-##### 3.2. Binarizarla con un umbral de  150 y la función: t(x) = 0, x<= 150; t(x)=255, x>150.
 La funcion recibe una imagen en 8 bits y retorna una imagen binarizada usando un umbral de 150
+
 ```
 def TransformacionBinarizadaUmbral(list8bits, umbral):
     return  [ (0 if list8bits[i]<= umbral else 255 ) 
               for i in range(len(list8bits))]
    
 ```
+
 ![alt text](https://wittline.github.io/Computer-Vision-and-Deep-Learning/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon_TB.png)
 
-##### 3.3 Aplicar la transformación de raíz cuadrada y escalarla en (0, 255). 
+#### 3.3 Aplicar la transformación de raíz cuadrada y escalarla en (0, 255). 
+
 La funcion recibe una imagen en 8 bits, se calcula la raiz cuadrada del valor de cada pixel y el resultado final se escala
+
 ```
 def escalar(list8bits):        
     mi = min(list8bits)
@@ -69,7 +73,6 @@ def escalar(list8bits):
     newlist =  [ ((255) /(ma - mi)) * (list8bits[i] - mi) 
                           for i in range(len(list8bits))]        
     return newlist
-
 
 def TransformacionRaizCuadrada(list8bits):
     return  [( math.sqrt(list8bits[i])) 
@@ -80,8 +83,10 @@ TRC = escalar(TransformacionRaizCuadrada(TP))
 ``` 
 ![alt text](https://wittline.github.io/Computer-Vision-and-Deep-Learning/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon_TRC.png)
 
-##### 3.4 Aplicar la transformación de potencia al cubo y escalarla en (0, 255).
+#### 3.4 Aplicar la transformación de potencia al cubo y escalarla en (0, 255).
+
 La funcion recibe una imagen en 8 bits, se calcula la la potencia al cubo del valor de cada pixel y el resultado final se escala
+
 ```
 def escalar(list8bits):        
     mi = min(list8bits)
@@ -172,7 +177,8 @@ imagenColor.close()
 
 ## 2. Edge Detection
 
-#### 1. Obtener la correlación cruzada H ⨂ w, de la imagen con dicho kernel, y obtener la convolucion H * w
+### 1. Obtener la correlación cruzada H ⨂ w, de la imagen con dicho kernel, y obtener la convolucion H * w
+
 ```
 def correlacion_cruzada(i, k):
     return sn.correlate2d(i,k,'same',boundary='wrap', fillvalue=0)    
@@ -210,7 +216,9 @@ def rotar(a, g):
     print("Convolucion:")
     print(cv)
 ```
-#### 2. Obtener las convoluciones H*Q , H*q y (H * q) qt,  q= [-1,3,-1]
+
+### 2. Obtener las convoluciones H*Q , H*q y (H * q) qt,  q= [-1,3,-1]
+
 ```
 def convolucion(i, k):
     return sn.convolve2d(i,k,'same',boundary='wrap', fillvalue=0)    
@@ -236,7 +244,8 @@ print("** Segundo ejercicio ** ")
     print("Convolucion (h * q)qt:")
     print(crqt)        
 ```
-#### 3. Usando la herramienta que mejor consideres, utiliza el operador Sobel de dicha librería para hacer la práctica que se indica en la diapositiva
+### 3. Usando la herramienta que mejor consideres, utiliza el operador Sobel de dicha librería para hacer la práctica que se indica en la diapositiva
+
 ```
 def contornos_sobel(filename):    
     imyo = Image.open(filename);
@@ -264,7 +273,8 @@ def contornos_sobel(filename):
 ![alt text](https://wittline.github.io/Computer-Vision-and-Deep-Learning/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%202/imyogray_sobely.jpg)
 ![alt text](https://wittline.github.io/Computer-Vision-and-Deep-Learning/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%202/imyogray_sobel.jpg)
 
-#### 4. Este ejercicio debe usar la imagen en tono de grises de panda.png, la cual Usando la información del gradiente con el operador derivada que creas más conveniente (ver archivo 02_Transformaciones_Varias.pdf, diapositiva 36), dibujar en la imagen los vectores gradiente ortogonales a como se muestran en las imágenes de las diapositivas 36 y 37 del archivo mencionado. Para calcular y aproximar el gradiente puedes utilizar cualquiera de los kernels derivada que desees para obtener las parciales con X y Y. Sin embargo, la magnitud de todos ellos darle un valor constante a tu elección. Además, para una mejor visualización de los vectores gradientes, puedes dibujar solamente un porcentaje de dichos vectores gradientes y solo aquellos que tengan las magnitudes más significativas. 
+### 4. Este ejercicio debe usar la imagen en tono de grises de panda.png, la cual Usando la información del gradiente con el operador derivada que creas más conveniente (ver archivo 02_Transformaciones_Varias.pdf, diapositiva 36), dibujar en la imagen los vectores gradiente ortogonales a como se muestran en las imágenes de las diapositivas 36 y 37 del archivo mencionado. Para calcular y aproximar el gradiente puedes utilizar cualquiera de los kernels derivada que desees para obtener las parciales con X y Y. Sin embargo, la magnitud de todos ellos darle un valor constante a tu elección. Además, para una mejor visualización de los vectores gradientes, puedes dibujar solamente un porcentaje de dichos vectores gradientes y solo aquellos que tengan las magnitudes más significativas. 
+
 ```
 def vectores_gradientes(filename): 
     
@@ -445,31 +455,29 @@ def main():
            
 if __name__ == '__main__':
     main()     
-```	
+```
+## 3. Counting objects
 
-# 3. Counting objects
-
-### Tarea 3 - Contador de objetos - Contar monedas
 ### Imagen original para las pruebas
 
 ![alt text](https://wittline.github.io/Computer-Vision-and-Deep-Learning/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%203/monedas.png)
 
-#### Metodología
+### Metodología
 ![alt text](https://wittline.github.io/Computer-Vision-and-Deep-Learning/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%203/image.png)
 
-#### 1. Leer imagen
+### 1. Leer imagen
 ```
 def LeerImagen(l):
     Imagen = cv2.imread(l)
     return Imagen, Imagen.copy()
 ```
-#### 2. Transformar la imagen a escala de grises, ecualizar el histograma y filtrar el ruido
+### 2. Transformar la imagen a escala de grises, ecualizar el histograma y filtrar el ruido
 ```
 def PreprocessImage(i):
     return cv2.GaussianBlur(cv2.equalizeHist(cv2.cvtColor(i, cv2.COLOR_BGR2GRAY)), (5,5),0)
 ```
 
-#### 3. Deteccion de bordes usando Canny
+### 3. Deteccion de bordes usando Canny
 ```
 def DetectarContornos(i, min, max):
     ImagenBordes = cv2.Canny(i, min, max)
@@ -477,7 +485,7 @@ def DetectarContornos(i, min, max):
     return ImagenBordes, contornos
 ```
 
-#### 4. Conteo de bordes
+### 4. Conteo de bordes
 ```
 def DibujarContornos(c):
     global ImagenContornos
@@ -490,7 +498,7 @@ def DibujarContornos(c):
     return i
 
 ```
-#### 4. Resultados
+### 4. Resultados
 ![alt text](https://wittline.github.io/Computer-Vision-and-Deep-Learning/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%203/resultados.png)
 
 ### Código
@@ -554,9 +562,9 @@ if __name__ == '__main__':
 
 ```   
 
-# 4. Morphological Operations and Geometric Transformations
+## 4. Morphological Operations and Geometric Transformations
 
-### Tarea 4 - Operaciones Morfològicas y Transformaciones geomètricas 
+
 ### Imagen para las pruebas
 
 ![alt text](https://wittline.github.io/Computer-Vision-and-Deep-Learning/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%204/letras.png)
@@ -564,7 +572,7 @@ if __name__ == '__main__':
 ![alt text](https://wittline.github.io/Computer-Vision-and-Deep-Learning/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%204/minerva.png)
 
 
-#### 1. Obtener un esqueleto
+### 1. Obtener un esqueleto
 ```
 def ObtenerEsqueleto(imagename, inverse):      
     global EE
@@ -590,7 +598,7 @@ def ObtenerEsqueleto(imagename, inverse):
 
 ```
 
-#### 3. Rotacion de la imagen
+### 3. Rotacion de la imagen
 ```
 
 def RotarImagen(imagen, angulo, punto):
@@ -624,7 +632,7 @@ def RotarImagen(imagen, angulo, punto):
     return rotada
 
 ```
-#### 4. Resultados
+### 4. Resultados
 ![alt text](https://wittline.github.io/Computer-Vision-and-Deep-Learning/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%204/resultados.PNG)
 
 ### Código
@@ -727,18 +735,17 @@ if __name__ == '__main__':
     main()
 ```  
 
-# 5. Projective Transformation
+## 5. Projective Transformation
 
-### Tarea 5 - Transformación Proyectiva
 ### Imagen para las pruebas
 
 ![alt text](https://wittline.github.io/Computer-Vision-and-Deep-Learning/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%205/mural.jpg)
 
-#### Seleccionar primero los 4 puntos de la imagen origen
+### Seleccionar primero los 4 puntos de la imagen origen
 ![alt text](https://wittline.github.io/Computer-Vision-and-Deep-Learning/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%205/Image_source_points.PNG)
-#### Seleccionar despues los 4 puntos de la imagen destino
+### Seleccionar despues los 4 puntos de la imagen destino
 ![alt text](https://wittline.github.io/Computer-Vision-and-Deep-Learning/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%205/Image_final_points.png)
-#### 4. Resultados
+### 4. Resultados
 ![alt text](https://wittline.github.io/Computer-Vision-and-Deep-Learning/Visión%20Computacional%20y%20Deep%20Learning/Tarea%205/ImagenProyetivaMejorada.jpg)
 
 ### Código
@@ -892,7 +899,7 @@ if __name__ == '__main__':
 ```
 
 
-# 5. Deep learning
+## 5. Deep learning
 
 ## Execution requirements
 Visual studio 2017
