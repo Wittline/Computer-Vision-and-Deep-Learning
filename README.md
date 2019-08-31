@@ -8,8 +8,8 @@ Aqui se describen los distintos entregables para distintas asignaturas
 <summary>1. Image processing - Image transformations</a></summary>
 <ul>
 	<li>
-	### Original Image
-     ![alt text](https://github.com/Wittline/ITESM/blob/master/Computer-Vision-and-Deep-Learning/Tarea%201/ejemplos/baboon.png)
+	### Original Image				
+     ![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon.png)
 
 #### 1. Transformar a una imagen de grises usando la transformación ponderada.
 La funciòn recibe una imagen en 24 bits (RGB) y retorna una imagen en la escala de grises en 8 bits
