@@ -7,8 +7,7 @@ Aqui se describen los distintos entregables para distintas asignaturas
 <details>
 <summary>1. Image processing - Image transformations</a></summary>
 <ul>
-	<li>
-	### Original Image
+<li>
 ![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon.png)
 		
 #### 1. Transformar a una imagen de grises usando la transformación ponderada.
@@ -173,10 +172,11 @@ imagenColor.close()
 ```
 </li>
 </ul>
-</details>
 
+<summary>2. Edge Detection</a></summary>
+<ul>
+<li>
 
-### Tarea 2 - Detector de bordes
 #### 1. Obtener la correlación cruzada H ⨂ w, de la imagen con dicho kernel, y obtener la convolucion H * w
 ```
 def correlacion_cruzada(i, k):
@@ -451,7 +451,11 @@ def main():
 if __name__ == '__main__':
     main()
      
-```
+```	
+</li>
+</details>
+
+
 
 
 ### Tarea 3 - Contador de objetos - Contar monedas
