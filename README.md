@@ -932,7 +932,7 @@ if __name__ == '__main__':
 <summary>5. Deep learning</summary>
 <ul>
 <li>
-
+Pending
 </li>
 </ul>
 </details>
