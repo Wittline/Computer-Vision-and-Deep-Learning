@@ -3,7 +3,7 @@
 Aqui se describen los distintos entregables para distintas asignaturas
 
 ## Computer vision and Deep Learning homeworks
-
+Counting objects
 <details>
 <summary>1. Image processing - Image transformations</a></summary>
 <ul>
@@ -461,6 +461,11 @@ if __name__ == '__main__':
 </ul>
 </details>
 
+<details>
+<summary>3. Counting objects</summary>
+<ul>
+<li>
+
 ### Tarea 3 - Contador de objetos - Contar monedas
 ### Imagen original para las pruebas
 
@@ -565,6 +570,10 @@ if __name__ == '__main__':
     main()
 
 ```   
+</li>
+</ul>
+</details>
+
 
 ### Tarea 4 - Operaciones Morfològicas y Transformaciones geomètricas 
 ### Imagen para las pruebas
