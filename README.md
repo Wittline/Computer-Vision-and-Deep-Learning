@@ -23,8 +23,7 @@ def TransformacionPonderada(list24bits):
 ```
 ![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon_TP.png)
     
-    </li>
-	<li>
+ 
 	
 	#### 2. Transformarla a una imagen de grises con el promedio aritmético.
 La funcion recibe una imagen en 24 bits (RGB) y retorna una imagen en la escala de grises en 8 bits
@@ -39,9 +38,6 @@ def TransformacionPromedioAritmetico(list24bits):
 ```
 
 ![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon_TPA.png)	
-	</li>	
-	
-	<li>
 	#### 3. A partir de la imagen de grises ponderada, realizar las siguientes transformaciones:
 ##### 3.1. Aplicarle la transformación negativa.
 La funcion recibe una imagen en 8 bits y retorna una imagen negativa
@@ -173,11 +169,9 @@ convertirImagen(imagenColor.size,TRC,'C:/ejemplos/baboon_TRC.png')
 TPC = escalar(TransformacionPotencia(TP, 3))
 convertirImagen(imagenColor.size,TPC,'C:/ejemplos/baboon_TPC.png')
 imagenColor.close()
-
      
 ```
-
-	</li>
+</li>
 </ul>
 </details>
 
