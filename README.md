@@ -3,13 +3,14 @@
 Aqui se describen los distintos entregables para distintas asignaturas
 
 ## Computer vision and Deep Learning homeworks
-
 <details>
-<summary>1. Image processing - Image transformations</summary>
-<ul>
-<li>			
+	<summary>1. Image processing - Image transformations</summary>
+	<ul>
+		<li>			
+			
+![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon.png)
+	
 #### 1. Transformar a una imagen de grises usando la transformación ponderada.
-	![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon.png)
 	
 La funciòn recibe una imagen en 24 bits (RGB) y retorna una imagen en la escala de grises en 8 bits
 ```
