@@ -36,7 +36,7 @@ def TransformacionPromedioAritmetico(list24bits):
    
 ```
 
-![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon_TPA.png)	
+![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon_TPA.png)	
 	#### 3. A partir de la imagen de grises ponderada, realizar las siguientes transformaciones:
 ##### 3.1. Aplicarle la transformación negativa.
 La funcion recibe una imagen en 8 bits y retorna una imagen negativa
@@ -47,7 +47,7 @@ def TransformacionNegativa(list8bits):
              for i in range(len(list8bits))]   
    
 ```
-![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon_TN.png)
+![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon_TN.png)
 
 
 
@@ -59,7 +59,7 @@ def TransformacionBinarizadaUmbral(list8bits, umbral):
               for i in range(len(list8bits))]
    
 ```
-![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon_TB.png)
+![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon_TB.png)
 
 ##### 3.3 Aplicar la transformación de raíz cuadrada y escalarla en (0, 255). 
 La funcion recibe una imagen en 8 bits, se calcula la raiz cuadrada del valor de cada pixel y el resultado final se escala
@@ -79,7 +79,7 @@ def TransformacionRaizCuadrada(list8bits):
 TRC = escalar(TransformacionRaizCuadrada(TP))
      
 ``` 
-![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon_TRC.png)
+![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon_TRC.png)
 
 ##### 3.4 Aplicar la transformación de potencia al cubo y escalarla en (0, 255).
 La funcion recibe una imagen en 8 bits, se calcula la la potencia al cubo del valor de cada pixel y el resultado final se escala
@@ -98,7 +98,7 @@ def TransformacionPotencia(list8bits, potencia):
 TPC = escalar(TransformacionPotencia(TP, 3))
      
 ```
-![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon_TPC.png)
+![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%201/ejemplos/baboon_TPC.png)
 
 ### Código
 ```
@@ -271,9 +271,9 @@ def contornos_sobel(filename):
     print("** Tercer ejercicio ** ")
     contornos = contornos_sobel('yo.jpg')    
 ```
-![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%202/imyogray_sobelx.jpg)
-![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%202/imyogray_sobely.jpg)
-![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%202/imyogray_sobel.jpg)
+![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%202/imyogray_sobelx.jpg)
+![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%202/imyogray_sobely.jpg)
+![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%202/imyogray_sobel.jpg)
 
 #### 4. Este ejercicio debe usar la imagen en tono de grises de panda.png, la cual Usando la información del gradiente con el operador derivada que creas más conveniente (ver archivo 02_Transformaciones_Varias.pdf, diapositiva 36), dibujar en la imagen los vectores gradiente ortogonales a como se muestran en las imágenes de las diapositivas 36 y 37 del archivo mencionado. Para calcular y aproximar el gradiente puedes utilizar cualquiera de los kernels derivada que desees para obtener las parciales con X y Y. Sin embargo, la magnitud de todos ellos darle un valor constante a tu elección. Además, para una mejor visualización de los vectores gradientes, puedes dibujar solamente un porcentaje de dichos vectores gradientes y solo aquellos que tengan las magnitudes más significativas. 
 ```
@@ -316,9 +316,9 @@ def vectores_gradientes(filename):
   vectores_gradientes("panda.jpg")
 ```
 
-![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%202/panda.jpg)
+![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%202/panda.jpg)
 
-![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%202/panda_vector.jpg)
+![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%202/panda_vector.jpg)
         
 ### Código
 ```
@@ -469,10 +469,10 @@ if __name__ == '__main__':
 ### Tarea 3 - Contador de objetos - Contar monedas
 ### Imagen original para las pruebas
 
-![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%203/monedas.png)
+![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%203/monedas.png)
 
 #### Metodología
-![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%203/image.png)
+![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%203/image.png)
 
 #### 1. Leer imagen
 ```
@@ -508,7 +508,7 @@ def DibujarContornos(c):
 
 ```
 #### 4. Resultados
-![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%203/resultados.png)
+![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%203/resultados.png)
 
 ### Código
 ```
@@ -584,9 +584,9 @@ if __name__ == '__main__':
 ### Tarea 4 - Operaciones Morfològicas y Transformaciones geomètricas 
 ### Imagen para las pruebas
 
-![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%204/letras.png)
-![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%204/caballo.png)
-![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%204/minerva.png)
+![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%204/letras.png)
+![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%204/caballo.png)
+![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%204/minerva.png)
 
 
 #### 1. Obtener un esqueleto
@@ -650,7 +650,7 @@ def RotarImagen(imagen, angulo, punto):
 
 ```
 #### 4. Resultados
-![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%204/resultados.PNG)
+![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%204/resultados.PNG)
 
 ### Código
 ```
@@ -764,12 +764,12 @@ if __name__ == '__main__':
 ### Tarea 5 - Transformación Proyectiva
 ### Imagen para las pruebas
 
-![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%205/mural.jpg)
+![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%205/mural.jpg)
 
 #### Seleccionar primero los 4 puntos de la imagen origen
-![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%205/Image_source_points.PNG)
+![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%205/Image_source_points.PNG)
 #### Seleccionar despues los 4 puntos de la imagen destino
-![alt text](https://github.com/Wittline/ITESM/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%205/Image_final_points.png)
+![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visi%C3%B3n%20Computacional%20y%20Deep%20Learning/Tarea%205/Image_final_points.png)
 #### 4. Resultados
 ![alt text](https://github.com/Wittline/Computer-Vision-and-Deep-Learning/blob/master/Visión%20Computacional%20y%20Deep%20Learning/Tarea%205/ImagenProyetivaMejorada.jpg)
 
