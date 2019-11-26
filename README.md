@@ -1,5 +1,6 @@
+# Ramses Alexander Coraspe Valdez
 # Computer vision and Deep Learning homeworks
-#### Ramses Alexander Coraspe Valdez
+
 
 This repository contains information on the basic techniques and algorithms used in computer image processing, in addition to some projects related to pattern recognition using deep learning.
 
