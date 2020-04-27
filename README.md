@@ -913,10 +913,10 @@ matplotlib
 scipy
 
 ## Contributing and Feedback
-Hate me more :)
+Any ideas or feedback about this research?. Help me to improve it.
 
 ## Authors
-- Created by Ramses Alexander Coraspe Valdez
+- Created by <a href="https://www.linkedin.com/in/ramsescoraspe"><strong>Ramses Alexander Coraspe Valdez</strong></a>
 - Created on April, 2019
 
 ## License
